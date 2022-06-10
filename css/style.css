@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box  ;
+    box-sizing: border-box ;
+    font-family: 'Patrick Hand', cursive
 }
 
 /* Root se utiliza para crear variables con valores que 
@@ -30,6 +31,7 @@ sean repetitivos en el sitio web como colores, tamaños, margenes, etc*/
     font-size: 50px;
     margin-bottom: 30px;
     background: var(--primary-color);
+    font-family: 'Patrick Hand', cursive;
 }
 
 .contBotones button{
@@ -41,6 +43,7 @@ sean repetitivos en el sitio web como colores, tamaños, margenes, etc*/
     border-radius: 5%;
     margin: 12px;
     cursor: pointer;
+    font-family: 'Amatic SC', cursive;
 }
 
 .contBotones button:hover{
@@ -60,6 +63,7 @@ sean repetitivos en el sitio web como colores, tamaños, margenes, etc*/
     color: var(--secondary-color);
     font-size: 50px;
     background: #e8e8bf;
+    font-family: 'Amatic SC', cursive;
 }
 
 .contFigura #figura {
@@ -211,11 +215,13 @@ sean repetitivos en el sitio web como colores, tamaños, margenes, etc*/
 .fila .contForm h2{
     font-size: 40px;
     margin-bottom: 20px;
+    font-family: 'Patrick Hand', cursive;
 }
 
 .fila .contForm p{
     font-size: 24px;
     margin-bottom: 20px;
+    font-family: 'Amatic SC', cursive;
 }
 
 .contForm form .formGroup{
@@ -226,24 +232,28 @@ sean repetitivos en el sitio web como colores, tamaños, margenes, etc*/
 form .formGroup label{
     display: block;
     font-size: 18px;
+    font-family: 'Amatic SC', cursive;
 }
 
 form .formGroup input{
     width: 100%;
     padding: 7px 15px;
     font-size: 15px;
+    font-family: 'Amatic SC', cursive;
 }
 
 form .formGroup select{
     width: 100%;
     padding: 7px 15px;
     font-size: 15px;
+    font-family: 'Amatic SC', cursive;
 }
 
 form .formGroup textarea{
     width: 100%;
     padding: 7px 15px;
     font-size: 15px;
+    font-family: 'Amatic SC', cursive;
 }
 
 button#crear{
@@ -255,6 +265,7 @@ button#crear{
     cursor: pointer;
     transition: .5s;
     border-radius: 5%;
+    font-family: 'Amatic SC', cursive;
 }
 
 button#crear:hover{
@@ -278,6 +289,7 @@ button#crear:hover{
     color: #faebd7;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: 'Amatic SC', cursive;
 }
 
 .fila .contAvatar p{
@@ -285,6 +297,7 @@ button#crear:hover{
     color: #faebd7;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: 'Amatic SC', cursive;
 }
 
 .contAvatar.Lila{
