@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+
+/* Root se utiliza para crear variables con valores que 
+sean repetitivos en el sitio web como colores, tamaños, margenes, etc*/
+:root{
+    --primary-color: #e0c9a2;
+    --secondary-color: #221b06;
+}
+
+.fila{
+    display: flex;
+    width: 1200px;
+    margin: 50px auto;
+    border: 2px solid var(--primary-color);
+}
+
+.fila .contBotones{
+    width: 50%;
+    background: var(--primary-color);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contBotones h2{
+    color: var(--secondary-color);
+    font-size: 50px;
+    margin-bottom: 30px;
+    background: var(--primary-color);
+}
+
+.contBotones button{
+    padding: 10px 20px;
+    background: var(--secondary-color);
+    color: #e8e8bf;
+    font-size: 18px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5%;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.contBotones button:hover{
+    padding: 15px 15px;
+    transition: .5s;
+}
+
+
+.fila .contFigura{
+    width: 50%;
+    text-align: center;
+    padding: 40px 20px;
+    background: #e8e8bf;
+}
+
+.contFigura h2{
+    color: var(--secondary-color);
+    font-size: 50px;
+    background: #e8e8bf;
+}
+
+.contFigura #figura {
+    width: 250px;
+    height: 250px;
+    background: var(--secondary-color);
+    margin: 80px auto;
+    transition: 1s;
+    border-radius: 5%;
+  
+}
+
+#figura.circulo{
+    border-radius: 50%;
+    transform: rotate(-360deg);
+    background: #847063;
+}
+
+/* transform tiene varias propierdades
+    rotate= girar
+    scale= aumemtar/disminuir 
+    translate= mover en eje X y Y
+    skew= distorcionar
+  */
+
+#figura.rombo{
+    border-radius: 5%;
+    transform: rotate(135deg);
+    background: #d3ac69;
+}
+
+#figura.rectanguloh{
+    width: 350px;
+    height: 150px;
+    border-radius: 5%;
+    background: #847063;
+    transform: rotate(360deg);
+}
+
+#figura.rectangulov{
+    width: 150px;
+    height: 300px;
+    border-radius: 5%;
+    background: #a0978d;
+    transform: rotate(360deg);
+}
+
+#figura.arriba{
+    transform: translateY(-60px);
+}
+
+#figura.abajo{
+    transform: translateY(60px);
+}
+
+#figura.izquierda{
+    transform: translateX(-60px);
+}
+
+#figura.derecha{
+    transform: translateX(60px);
+}
+
+#figura.diagonal{
+    transform: translate(60px,-60px);
+}
+
+#figura.triangulo{
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-right: 150px solid #e8e8bf;
+    border-top: 100px solid #e8e8bf;
+    border-left: 150px solid #e8e8bf;
+    border-bottom: 250px solid #2d1228;
+    transform: rotate(360deg);
+}
+
+#figura.gif{
+    margin-top: 50px;
+    width: 200px;
+    height: 300px;
+    background-image: url(../img/boho2.gif);
+    background-size: cover;
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+#figura.trapecio{
+    border-bottom: 150px solid #847063;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 350px;    
+}
+
+#figura.paralelograma{
+    width: 250px; 
+    height: 200px; 
+    border: 3px solid #2d1228; 
+    background: #2d1228;
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -ms-transform: skew(20deg);
+    -o-transform: skew(20deg);
+    transform: skew(20deg);
+}
+
+#figura.banderin{
+    width: 0px;
+    height: 180px;
+    border-left: 50px solid #a0978d;
+    border-right: 50px solid #a0978d;
+    border-bottom: 35px solid #e8e8bf;
+}
+
+#figura.ovalo{
+    width: 220px;
+    height: 120px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #847063;
+}  
+
+#figura.pacman{
+    width:0;
+    height:0;
+    border-right: 100px solid #e8e8bf;
+    border-top: 100px solid #d3ac69;
+    border-left: 100px solid #d3ac69;
+    border-bottom: 100px solid #d3ac69;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    transform: rotate(360deg);
+}  
+
+/* Capturar Datos */
+
+.fila .contForm{
+    width: 50%;
+    background: #422616;
+    color: #faebd7;
+    text-align: center;
+    padding: 40px;
+}
+
+.fila .contForm h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.fila .contForm p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contForm form .formGroup{
+    padding: 10px 50px;
+    text-align: left;
+}
+
+form .formGroup label{
+    display: block;
+    font-size: 18px;
+}
+
+form .formGroup input{
+    width: 100%;
+    padding: 7px 15px;
+    font-size: 15px;
+}
+
+form .formGroup select{
+    width: 100%;
+    padding: 7px 15px;
+    font-size: 15px;
+}
+
+form .formGroup textarea{
+    width: 100%;
+    padding: 7px 15px;
+    font-size: 15px;
+}
+
+button#crear{
+    background: #b99c7a;
+    font-size: 15px;
+    padding: 12px 40px;
+    color: #faebd7;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 5%;
+}
+
+button#crear:hover{
+    padding: 12px 30px;
+    transition: .5s;
+}
+
+.fila .contAvatar{
+    text-align: center;
+    padding: 90px;
+    background: #faebd7;
+    width: 50%;
+}
+
+.fila .contAvatar img{
+    width: 200px;
+}
+
+.fila .contAvatar h3{
+    font-size: 35px;
+    color: #faebd7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fila .contAvatar p{
+    font-size: 25px;
+    color: #faebd7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contAvatar.Lila{
+    background: #9AA3D9;
+}
+
+.contAvatar.Verde{
+    background: #BFB854;
+}
+
+.contAvatar.Naranja{
+    background: #F2B05E;
+}
+
+.contAvatar.Terracota{
+    background: #BF6836;
+}
+
+.contAvatar.Cafe{
+    background: #734A32;
+}
+
+.btn-nav{
+    position: fixed;
+    bottom: 30px;
+    right: 60px;
+    background: #422616;
+    color: #e0c9a2;
+    padding: 12px 40px;
+    text-decoration: none;
+}
+
+.btn-nav:hover{
+    padding: 12px 30px;
+    transition: .5s;
+}
